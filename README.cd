@@ -1,56 +1,62 @@
-# Titulo 
+## Titulo del proyecto
+
 El impacto de las nuevas tecnologías en la sociedad: desarrollo y proyección de soluciones informáticas
-# Integrantes
+
+## Integrantes
+
 Domenica Ferananda Ramos Requenes
-#Objetivo del sistema
 
-Desarrollar e implementar un juego interactivo del Ahorcado que permita poner en práctica los principios básicos de la programación mediante el uso de variables, listas, funciones, estructuras condicionales, ciclos repetitivos y validación de datos. Este sistema busca recrear en consola una dinámica en la que el usuario debe descubrir una palabra oculta, mientras el programa controla el avance de la partida, administra los intentos disponibles y muestra el resultado final.
+## Objetivo del sistema
 
-# Descripción de funcionalidades 
+Desarrollar e implementar un juego interactivo del **Ahorcado** que permita poner en práctica los principios básicos de la programación mediante el uso de variables, listas, funciones, estructuras condicionales, ciclos repetitivos y validación de datos. Este sistema busca recrear en consola una dinámica en la que el usuario debe descubrir una palabra oculta, mientras el programa controla el avance de la partida, administra los intentos disponibles y muestra el resultado final.
 
-La solución creada corresponde a una versión en consola del juego del Ahorcado, en la cual el usuario interactúa con el programa para intentar adivinar una palabra elegida de forma aleatoria. Entre sus funciones principales se encuentran las siguientes:
+## Descripción de funcionalidades
 
-Inicio de partida, permitiendo al usuario comenzar una nueva sesión de juego.
-Selección aleatoria de palabras, realizada automáticamente al iniciar cada ronda a partir de una lista definida previamente.
-Ingreso de letras por parte del jugador, como medio principal de interacción con el sistema.
-Validación de la letra ingresada, asegurando que el usuario escriba solo una letra válida del alfabeto.
-Verificación de coincidencias, para comprobar si la letra pertenece a la palabra secreta.
-Actualización del estado del juego, sustituyendo los guiones por las letras acertadas.
-Visualización del progreso de la palabra, mostrando al jugador las letras descubiertas y las que todavía faltan por adivinar.
-Control de intentos restantes, reduciendo oportunidades cuando la letra ingresada no forma parte de la palabra.
-Registro de letras utilizadas, evitando que el jugador repita letras ya ingresadas durante la misma partida.
-Determinación del resultado final, estableciendo si el jugador gana al completar la palabra o pierde al quedarse sin intentos.
-Reinicio del juego, permitiendo iniciar una nueva partida sin necesidad de cerrar el programa.
-Funcionamiento del sistema
+La solución creada corresponde a una versión en consola del juego del **Ahorcado**, en la cual el usuario interactúa con el programa para intentar adivinar una palabra elegida de forma aleatoria. Entre sus funciones principales se encuentran las siguientes:
 
-# El desarrollo del juego sigue la siguiente secuencia:
+- **Inicio de partida**, permitiendo al usuario comenzar una nueva sesión de juego.
+- **Selección aleatoria de palabras**, realizada automáticamente al iniciar cada ronda a partir de una lista definida previamente.
+- **Ingreso de letras por parte del jugador**, como medio principal de interacción con el sistema.
+- **Validación de la letra ingresada**, asegurando que el usuario escriba solo una letra válida del alfabeto.
+- **Verificación de coincidencias**, para comprobar si la letra pertenece a la palabra secreta.
+- **Actualización del estado del juego**, sustituyendo los guiones por las letras acertadas.
+- **Visualización del progreso de la palabra**, mostrando al jugador las letras descubiertas y las que todavía faltan por adivinar.
+- **Control de intentos restantes**, reduciendo oportunidades cuando la letra ingresada no forma parte de la palabra.
+- **Registro de letras utilizadas**, evitando que el jugador repita letras ya ingresadas durante la misma partida.
+- **Determinación del resultado final**, estableciendo si el jugador gana al completar la palabra o pierde al quedarse sin intentos.
+- **Reinicio del juego**, permitiendo iniciar una nueva partida sin necesidad de cerrar el programa.
 
-El jugador inicia una nueva partida.
-El sistema elige una palabra de manera aleatoria.
-La palabra se muestra inicialmente con guiones bajos.
-El jugador introduce una letra.
-El sistema revisa la entrada y verifica si esa letra ya fue usada.
-Si la letra está dentro de la palabra, se actualiza el progreso.
-Si la letra no pertenece a la palabra, se descuenta un intento.
-El programa muestra el progreso actual, las letras utilizadas y los intentos que quedan.
-La partida continúa hasta que el jugador descubra la palabra o agote sus intentos.
-Al terminar, el sistema brinda la opción de reiniciar el juego.
-Relación con la estructura del código
+## Funcionamiento del sistema
 
-# La implementación del sistema se organiza mediante las siguientes funciones:
+El desarrollo del juego sigue la siguiente secuencia:
 
-seleccionar_palabra(): elige una palabra aleatoria desde la lista disponible.
-mostrar_estado(progreso, intentos, letras_usadas): muestra el estado actual de la partida.
-verificar_letra(letra, palabra, progreso): comprueba si la letra ingresada pertenece a la palabra.
-jugar(): contiene la lógica principal de una partida.
-main(): gestiona la ejecución general del programa y permite repetir partidas.
-Ejecución del proyecto
+1. El jugador inicia una nueva partida.
+2. El sistema elige una palabra de manera aleatoria.
+3. La palabra se muestra inicialmente con guiones bajos.
+4. El jugador introduce una letra.
+5. El sistema revisa la entrada y verifica si esa letra ya fue usada.
+6. Si la letra está dentro de la palabra, se actualiza el progreso.
+7. Si la letra no pertenece a la palabra, se descuenta un intento.
+8. El programa muestra el progreso actual, las letras utilizadas y los intentos que quedan.
+9. La partida continúa hasta que el jugador descubra la palabra o agote sus intentos.
+10. Al terminar, el sistema brinda la opción de reiniciar el juego.
+
+## Relación con la estructura del código
+
+La implementación del sistema se organiza mediante las siguientes funciones:
+
+- `seleccionar_palabra()`: elige una palabra aleatoria desde la lista disponible.
+- `mostrar_estado(progreso, intentos, letras_usadas)`: muestra el estado actual de la partida.
+- `verificar_letra(letra, palabra, progreso)`: comprueba si la letra ingresada pertenece a la palabra.
+- `jugar()`: contiene la lógica principal de una partida.
+- `main()`: gestiona la ejecución general del programa y permite repetir partidas.
+
+## Ejecución del proyecto
 
 Para ejecutar el programa, se debe abrir la terminal en la carpeta del proyecto y utilizar el siguiente comando:
-````
+
+```bash
 python codigo/Ahorcado.py
-
-````
-# Fecha
-
+```
+## Fecha
 09/06/2026
