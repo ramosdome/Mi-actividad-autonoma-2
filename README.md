@@ -4,7 +4,7 @@ El impacto de las nuevas tecnologías en la sociedad: desarrollo y proyección d
 
 ## Integrantes
 
-Domenica Ferananda Ramos Requenes
+Domenica Fernanda Ramos Requenes
 
 ## Objetivo del sistema
 
@@ -59,4 +59,4 @@ Para ejecutar el programa, se debe abrir la terminal en la carpeta del proyecto 
 python codigo/Ahorcado.py
 ```
 ## Fecha
-09/06/2026
+28/06/2026
